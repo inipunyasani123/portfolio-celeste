@@ -2,7 +2,7 @@
 
 Portfolio template for Celeste, a fictional brand designer and art director: quiet editorial case studies that link to six live demo sites, plus essays on menus, recipe cards, and invitations.
 
-**Demo live:** https://portfolio-celeste-one.vercel.app
+**Demo live:** https://portfolio-celeste.pintuweb.id
 
 ![Tangkapan layar](public/og.jpg)
 
@@ -21,12 +21,12 @@ Persona fiktif Celeste, desainer merek dan art director. Editorial yang tenang: 
 
 | Studi kasus | Demo live |
 | --- | --- |
-| Cissy Coffee | https://landing-cissycoffee.vercel.app |
-| Rasa Nusantara | https://landing-rasanusantara.vercel.app |
-| CitaRasa Digital | https://landing-citarasa.vercel.app |
-| Raka & Sinta | https://undangan-wedding-eight.vercel.app |
-| Dara Puspita | https://linkinbio-arsip.vercel.app |
-| Kopi Vendra | https://linkinbio-vendra.vercel.app |
+| Cissy Coffee | https://landing-cissycoffee.pintuweb.id |
+| Rasa Nusantara | https://landing-rasanusantara.pintuweb.id |
+| CitaRasa Digital | https://landing-citarasa.pintuweb.id |
+| Raka & Sinta | https://undangan-wedding.pintuweb.id |
+| Dara Puspita | https://linkinbio-arsip.pintuweb.id |
+| Kopi Vendra | https://linkinbio-vendra.pintuweb.id |
 
 ## Halaman
 

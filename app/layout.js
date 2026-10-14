@@ -11,7 +11,7 @@ const playfair = Playfair_Display({ variable: "--font-playfair", subsets: ["lati
 const __jsonld = {"@context":"https://schema.org","@type":"WebSite","name":"Celeste — Brand Designer & Art Director","description":"Portfolio template for Celeste, a fictional brand designer and art director: quiet editorial case studies that link to six live demo sites, plus essays on menus, recipe cards, and invitations.","inLanguage":"en"};
 
 export const metadata = {
-  metadataBase: new URL("https://portfolio-celeste-one.vercel.app"),
+  metadataBase: new URL("https://portfolio-celeste.pintuweb.id"),
   title: { default: "Celeste — Brand Designer & Art Director", template: "%s — Celeste" },
   description: "Portfolio template for Celeste, a fictional brand designer and art director: quiet editorial case studies that link to six live demo sites, plus essays on menus, recipe cards, and invitations.",
   applicationName: "Celeste",
@@ -19,11 +19,11 @@ export const metadata = {
   authors: [{ name: "Celeste" }],
   creator: "Celeste",
   publisher: "Celeste",
-  alternates: { canonical: "https://portfolio-celeste-one.vercel.app" },
+  alternates: { canonical: "https://portfolio-celeste.pintuweb.id" },
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://portfolio-celeste-one.vercel.app",
+    url: "https://portfolio-celeste.pintuweb.id",
     siteName: "Celeste",
     title: "Celeste — Brand Designer & Art Director",
     description: "Portfolio template for Celeste, a fictional brand designer and art director: quiet editorial case studies that link to six live demo sites, plus essays on menus, recipe cards, and invitations.",
