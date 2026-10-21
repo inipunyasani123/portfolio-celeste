@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1600" viewBox="0 0 1200 1600">
+  <defs>
+  <filter id="ch-grain" x="0" y="0" width="100%" height="100%" filterUnits="objectBoundingBox">
+    <feTurbulence type="fractalNoise" baseFrequency="0.22" numOctaves="2" seed="7" result="n"/>
+    <feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -0.9 1.28" result="a"/>
+    <feComposite in="SourceGraphic" in2="a" operator="in"/>
+  </filter>
+  <filter id="ch-paper" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="3" seed="2" result="n"/>
+    <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.55  0 0 0 0 0.42  0 0 0 0 0.3  0 0 0 .10 0"/>
+  </filter>
+  <pattern id="ch-ht" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(30)"><circle cx="5" cy="5" r="2.2" fill="#c0583a"/></pattern>
+  <pattern id="ch-motif" width="62" height="62" patternUnits="userSpaceOnUse" patternTransform="rotate(12)"><path d="M 31 12 C 38 20 38 34 31 42 C 24 34 24 20 31 12 Z" fill="#f6efe3" opacity=".5"/><circle cx="0" cy="0" r="3.5" fill="#f6efe3" opacity=".45"/><circle cx="62" cy="62" r="3.5" fill="#f6efe3" opacity=".45"/></pattern>
+  <clipPath id="ch-face"><path d="M 0 -150 C 74 -150 120 -100 120 -36 C 120 30 110 78 88 110 C 66 142 36 158 0 158 C -36 158 -66 142 -88 110 C -110 78 -120 30 -120 -36 C -120 -100 -74 -150 0 -150 Z"/></clipPath></defs>
+  <rect width="1200" height="1600" fill="#f6efe3"/>
+  <!-- lengkung editorial -->
+  <path d="M 190 1600 L 190 640 C 190 380 380 210 600 210 C 820 210 1010 380 1010 640 L 1010 1600 Z" fill="#e6d9c4"/>
+  <g style="mix-blend-mode:multiply" filter="url(#ch-grain)">
+    <g transform="translate(150 1180) rotate(-14) scale(1.25)" fill="#c0583a">
+    <path d="M 0 0 C 10 -80 6 -170 -10 -260" stroke="#c0583a" stroke-width="7" fill="none" stroke-linecap="round"/>
+    <path transform="translate(-4 -40) rotate(-38)" d="M 0 0 C 22 -10 44 -6 58 0 C 44 8 22 10 0 0 Z"/><path transform="translate(4 -84) rotate(38)" d="M 0 0 C 22 -10 44 -6 58 0 C 44 8 22 10 0 0 Z"/><path transform="translate(-4 -128) rotate(-38)" d="M 0 0 C 22 -10 44 -6 58 0 C 44 8 22 10 0 0 Z"/><path transform="translate(4 -172) rotate(38)" d="M 0 0 C 22 -10 44 -6 58 0 C 44 8 22 10 0 0 Z"/><path transform="translate(-4 -216) rotate(-38)" d="M 0 0 C 22 -10 44 -6 58 0 C 44 8 22 10 0 0 Z"/>
+  </g>
+    <g transform="translate(1070 1140) rotate(16) scale(1.1)" fill="#c0583a">
+    <path d="M 0 0 C 10 -80 6 -170 -10 -260" stroke="#c0583a" stroke-width="7" fill="none" stroke-linecap="round"/>
+    <path transform="translate(-4 -40) rotate(-38)" d="M 0 0 C 22 -10 44 -6 58 0 C 44 8 22 10 0 0 Z"/><path transform="translate(4 -84) rotate(38)" d="M 0 0 C 22 -10 44 -6 58 0 C 44 8 22 10 0 0 Z"/><path transform="translate(-4 -128) rotate(-38)" d="M 0 0 C 22 -10 44 -6 58 0 C 44 8 22 10 0 0 Z"/><path transform="translate(4 -172) rotate(38)" d="M 0 0 C 22 -10 44 -6 58 0 C 44 8 22 10 0 0 Z"/><path transform="translate(-4 -216) rotate(-38)" d="M 0 0 C 22 -10 44 -6 58 0 C 44 8 22 10 0 0 Z"/>
+  </g>
+    <circle cx="930" cy="330" r="64" fill="#c0583a" opacity=".85"/>
+  </g>
+  <g transform="translate(600 760) scale(1.42)">
+  <clipPath id="ch-nohijab"><path d="M -600 -600 H 600 V 1000 H -600 Z M 0 -238 C 116 -238 186 -152 188 -48 C 190 40 180 118 166 182 C 236 214 300 252 330 312 C 352 360 350 420 330 470 C 300 530 220 560 120 574 C 60 582 20 584 0 584 C -20 584 -60 582 -120 574 C -220 560 -300 530 -330 470 C -350 420 -352 360 -330 312 C -300 252 -236 214 -166 182 C -180 118 -190 40 -188 -48 C -186 -152 -116 -238 0 -238 Z" fill-rule="evenodd" clip-rule="evenodd"/></clipPath>
+  <!-- alas kertas buram supaya latar tidak tembus ke wajah -->
+  <path d="M -150 236 C -240 262 -330 300 -370 370 C -402 430 -414 540 -420 820 L 420 820 C 414 540 402 430 370 370 C 330 300 240 262 150 236 Z" fill="#f6efe3"/><path d="M 0 -238 C 116 -238 186 -152 188 -48 C 190 40 180 118 166 182 C 236 214 300 252 330 312 C 352 360 350 420 330 470 C 300 530 220 560 120 574 C 60 582 20 584 0 584 C -20 584 -60 582 -120 574 C -220 560 -300 530 -330 470 C -350 420 -352 360 -330 312 C -300 252 -236 214 -166 182 C -180 118 -190 40 -188 -48 C -186 -152 -116 -238 0 -238 Z" fill="#f6efe3"/>
+  <g style="mix-blend-mode:multiply" filter="url(#ch-grain)">
+    <path d="M 0 -238 C 116 -238 186 -152 188 -48 C 190 40 180 118 166 182 C 236 214 300 252 330 312 C 352 360 350 420 330 470 C 300 530 220 560 120 574 C 60 582 20 584 0 584 C -20 584 -60 582 -120 574 C -220 560 -300 530 -330 470 C -350 420 -352 360 -330 312 C -300 252 -236 214 -166 182 C -180 118 -190 40 -188 -48 C -186 -152 -116 -238 0 -238 Z M 0 -150 C 74 -150 120 -100 120 -36 C 120 30 110 78 88 110 C 66 142 36 158 0 158 C -36 158 -66 142 -88 110 C -110 78 -120 30 -120 -36 C -120 -100 -74 -150 0 -150 Z" fill-rule="evenodd" fill="#c0583a"/>
+    <path d="M 0 -238 C 116 -238 186 -152 188 -48 C 190 40 180 118 166 182 C 236 214 300 252 330 312 C 352 360 350 420 330 470 C 300 530 220 560 120 574 C 60 582 20 584 0 584 C -20 584 -60 582 -120 574 C -220 560 -300 530 -330 470 C -350 420 -352 360 -330 312 C -300 252 -236 214 -166 182 C -180 118 -190 40 -188 -48 C -186 -152 -116 -238 0 -238 Z M 0 -150 C 74 -150 120 -100 120 -36 C 120 30 110 78 88 110 C 66 142 36 158 0 158 C -36 158 -66 142 -88 110 C -110 78 -120 30 -120 -36 C -120 -100 -74 -150 0 -150 Z" fill-rule="evenodd" fill="url(#ch-motif)"/>
+    <!-- lipatan kain -->
+    <path d="M -132 176 C -60 226 60 226 132 176" stroke="#f6efe3" stroke-opacity=".55" stroke-width="9" fill="none" stroke-linecap="round"/>
+    <path d="M -250 300 C -170 400 -70 452 40 470" stroke="#f6efe3" stroke-opacity=".45" stroke-width="8" fill="none" stroke-linecap="round"/>
+    <path d="M 250 300 C 200 380 150 420 90 446" stroke="#f6efe3" stroke-opacity=".4" stroke-width="8" fill="none" stroke-linecap="round"/>
+    <!-- kulit: terakota tipis di atas kertas -->
+    <path d="M 0 -150 C 74 -150 120 -100 120 -36 C 120 30 110 78 88 110 C 66 142 36 158 0 158 C -36 158 -66 142 -88 110 C -110 78 -120 30 -120 -36 C -120 -100 -74 -150 0 -150 Z" fill="#c0583a" opacity=".3"/>
+    <path d="M 40 -160 C 110 -90 112 30 70 120 C 50 150 20 166 -10 170 L 140 170 L 140 -160 Z" fill="#c0583a" opacity=".16" clip-path="url(#ch-face)"/>
+    <ellipse cx="-70" cy="58" rx="30" ry="17" fill="#c0583a" opacity=".38"/>
+    <ellipse cx="72" cy="58" rx="30" ry="17" fill="#c0583a" opacity=".38"/>
+    <path d="M -30 88 C -16 86 -6 88 0 91 C 6 88 16 86 30 88 C 22 108 -22 108 -30 88 Z" fill="#c0583a"/></g>
+  <g style="mix-blend-mode:multiply" filter="url(#ch-grain)" transform="translate(5 4)">
+    <path d="M -150 236 C -240 262 -330 300 -370 370 C -402 430 -414 540 -420 820 L 420 820 C 414 540 402 430 370 370 C 330 300 240 262 150 236 Z" fill="#2f2722" clip-path="url(#ch-nohijab)"/>
+    <path d="M 0 -150 C 74 -150 120 -100 120 -36 C 120 30 110 78 88 110 C 66 142 36 158 0 158 C -36 158 -66 142 -88 110 C -110 78 -120 30 -120 -36 C -120 -100 -74 -150 0 -150 Z" fill="#2f2722" opacity=".07"/>
+    <circle cx="0" cy="650" r="9" fill="#f6efe3" opacity=".45"/><circle cx="0" cy="720" r="9" fill="#f6efe3" opacity=".45"/><circle cx="0" cy="790" r="9" fill="#f6efe3" opacity=".45"/>
+    <!-- fitur -->
+    <path d="M -80 -46 C -64 -58 -44 -58 -30 -50" stroke="#2f2722" stroke-width="8" fill="none" stroke-linecap="round"/>
+    <path d="M 30 -50 C 44 -58 64 -58 80 -46" stroke="#2f2722" stroke-width="8" fill="none" stroke-linecap="round"/>
+    <path d="M -78 -4 C -66 -20 -46 -20 -34 -6 C -46 6 -66 8 -78 -4 Z" fill="#2f2722"/>
+    <path d="M 34 -6 C 46 -20 66 -20 78 -4 C 66 8 46 6 34 -6 Z" fill="#2f2722"/>
+    <path d="M -84 -6 C -70 -26 -44 -26 -30 -8 M 30 -8 C 44 -26 70 -26 84 -6" stroke="#2f2722" stroke-width="5" fill="none" stroke-linecap="round"/>
+    <circle cx="-50" cy="-10" r="4" fill="#f6efe3"/><circle cx="62" cy="-10" r="4" fill="#f6efe3"/>
+    <path d="M 2 4 C 6 22 14 38 12 50 C 8 58 0 58 -8 54" stroke="#2f2722" stroke-width="6" fill="none" stroke-linecap="round"/>
+    <path d="M -30 88 C -12 100 12 100 30 88" stroke="#2f2722" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <!-- bros -->
+    <circle cx="-118" cy="214" r="15" fill="#2f2722"/><circle cx="-118" cy="214" r="6" fill="#f6efe3" opacity=".7"/></g></g>
+</svg>

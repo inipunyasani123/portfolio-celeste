@@ -4,6 +4,10 @@ import Link from 'next/link';
 import { ArrowRight, ArrowUpRight } from 'lucide-react';
 import Reveal from '@/components/ui/Reveal';
 import { profile, stats, services, projects, process } from '@/lib/data';
+import loader from '@/image-loader';
+
+// Varian WebP statis untuk <img> potret (bukan next/image karena butuh <picture> art direction).
+const srcSetFor = (src, widths) => widths.map((w) => `${loader({ src, width: w })} ${w}w`).join(', ');
 
 export default function Home() {
   return (
@@ -25,11 +29,11 @@ export default function Home() {
                 <Link href="/contact" className="inline-flex min-h-11 items-center text-sm tracking-wide text-ink underline underline-offset-4 decoration-ink/30 hover:decoration-clay">Get in touch</Link>
               </div>
             </div>
-            {/* Foto hanya di layar lebar. Di ponsel tipografi yang memimpin; <picture> memberi GIF 1px sehingga
-                foto tidak diunduh dan judul tetap menjadi LCP. */}
+            {/* Potret ilustrasi hanya di layar lebar. Di ponsel tipografi yang memimpin; <picture> memberi GIF 1px
+                sehingga gambar tidak diunduh dan judul tetap menjadi LCP. */}
             <picture className="relative hidden aspect-[3/4] w-full overflow-hidden rounded-sm md:block">
               <source media="(max-width: 767px)" srcSet="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
-              <img src={profile.avatar} alt="" width={432} height={540} fetchPriority="high" decoding="async" className="absolute inset-0 h-full w-full object-cover" />
+              <img src={loader({ src: profile.avatar, width: 828 })} srcSet={srcSetFor(profile.avatar, [640, 828, 1080, 1280])} sizes="(min-width: 1200px) 460px, 37vw" alt={profile.avatarAlt} width={1200} height={1600} fetchPriority="high" decoding="async" className="absolute inset-0 h-full w-full object-cover" />
             </picture>
           </div>
         </div>
