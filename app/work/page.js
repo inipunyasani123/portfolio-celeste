@@ -23,7 +23,7 @@ export default function WorkPage() {
           <div className="mb-10 flex flex-wrap gap-x-6 gap-y-1 md:mb-12" role="group" aria-label="Filter projects">
             {CATS.map((c) => (
               <button key={c} type="button" onClick={() => setCat(c)} aria-pressed={cat === c} className={`min-h-11 border-b text-sm uppercase tracking-[0.15em] transition ${cat === c ? 'border-clay text-clay' : 'border-transparent text-ink/70 hover:text-ink'}`}>
-                {c} <sup className="text-[0.7em] tracking-normal">{count(c)}</sup>
+                {c} <sup className="text-xs tracking-normal">{count(c)}</sup>
               </button>
             ))}
           </div>

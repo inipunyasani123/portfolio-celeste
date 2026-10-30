@@ -23,7 +23,7 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 z-50 border-b border-ink/10 bg-cream/80 backdrop-blur-md">
       <nav aria-label="Main" className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-        <Link href="/" className="font-serif text-2xl tracking-tight text-ink">Celeste</Link>
+        <Link href="/" className="inline-flex min-h-11 items-center font-serif text-2xl tracking-tight text-ink">Celeste</Link>
 
         <div className="hidden items-center gap-8 md:flex">
           {links.map((l) => (
