@@ -14,3 +14,4 @@ Celeste adalah tokoh rekaan. Tidak ada foto orang, tidak ada testimoni.
 | work/vendra.webp | Mockup halaman Kopi Vendra | Idem; foto minuman tercatat di SUMBER.md proyek linkinbio-vendra | Karya sendiri / CC0 |
 
 `public/og.jpg` adalah tangkapan beranda situs ini; `public/og/work/*.jpg` dipangkas dari mockup di atas.
+- 30 Okt 2026 (sore): tangkapan mockup di work/ diambil ulang dari situs contoh yang sudah tanpa wajah; og/work/*.jpg dibuat ulang darinya.
