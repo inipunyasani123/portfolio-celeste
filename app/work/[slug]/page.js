@@ -36,7 +36,7 @@ export default async function CaseStudy({ params }) {
       <section className="px-6 pb-20">
         <div className="mx-auto grid max-w-6xl gap-10 lg:grid-cols-[1.6fr_1fr]">
           <div className="relative aspect-[4/3] overflow-hidden border border-ink/10">
-            <Image src={p.image} alt={`Screens from the ${p.title} live demo`} fill priority fetchPriority="high" sizes="(max-width:1024px) 100vw, 60vw" className="object-cover object-top" />
+            <Image src={p.image} alt={`Screens from the ${p.title} live site`} fill priority fetchPriority="high" sizes="(max-width:1024px) 100vw, 60vw" className="object-cover object-top" />
           </div>
           <aside className="h-fit border-t border-ink/20 pt-6">
             <dl className="space-y-4 text-sm">
@@ -47,7 +47,7 @@ export default async function CaseStudy({ params }) {
             <a href={p.url} target="_blank" rel="noopener noreferrer" className="mt-8 inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-full bg-ink px-6 py-3 text-sm tracking-wide text-cream transition hover:bg-clay">
               Open the live site <ArrowUpRight size={16} aria-hidden="true" />
             </a>
-            <p className="mt-3 text-xs text-ink/70">A live demo project. Opens in a new tab.</p>
+            <p className="mt-3 text-xs text-ink/70">A live sample project. Opens in a new tab.</p>
           </aside>
         </div>
 

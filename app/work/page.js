@@ -17,7 +17,7 @@ export default function WorkPage() {
 
   return (
     <main>
-      <PageHeader kicker="Work" title="Selected projects." sub="Six live demo sites: menus and recipe cards, an invitation, and two link pages. Each opens a short case study and the site itself." />
+      <PageHeader kicker="Work" title="Selected projects." sub="Six live sample sites: menus and recipe cards, an invitation, and two link pages. Each opens a short case study and the site itself." />
       <section className="px-6 pb-16 pt-4 md:py-12">
         <div className="mx-auto max-w-6xl">
           <div className="mb-10 flex flex-wrap gap-x-6 gap-y-1 md:mb-12" role="group" aria-label="Filter projects">
